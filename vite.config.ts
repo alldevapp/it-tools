@@ -98,15 +98,7 @@ export default defineConfig({
     }),
     Unocss(),
   ],
-  base: '/devtools/',
-  server: {
-    host: '0.0.0.0',
-    port: 5173
-  },
-  preview: {
-    host: '0.0.0.0',
-    port: 4173
-  },
+  base: baseUrl,
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
