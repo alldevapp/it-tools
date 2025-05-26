@@ -98,7 +98,6 @@ export default defineConfig({
     }),
     Unocss(),
   ],
-  base: baseUrl,
   base: '/devtools/',
   server: {
     host: '0.0.0.0',
