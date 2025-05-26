@@ -99,6 +99,15 @@ export default defineConfig({
     Unocss(),
   ],
   base: baseUrl,
+  base: '/devtools/',
+  server: {
+    host: '0.0.0.0',
+    port: 5173
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 4173
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -114,15 +123,3 @@ export default defineConfig({
     target: 'esnext',
   },
 });
-
-export default defineConfig({
-  base: '/devtools/',
-  server: {
-    host: '0.0.0.0',
-    port: 5173
-  },
-  preview: {
-    host: '0.0.0.0',
-    port: 4173
-  }
-})
